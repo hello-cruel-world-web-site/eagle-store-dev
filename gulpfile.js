@@ -20,13 +20,13 @@ let browserSync = require('browser-sync');
 sass.compiler = require('node-sass');
 
 var diretorios = {
-    dist: '../eagle-store/',
-    distview: '../eagle-store/view/',
+    dist: 'build/',
+    distview: 'build/view/',
 
     cssin: 'src/css/**/*.css',
     cssoutname: 'style.min.css',
     cssoutsrc: 'src/css',
-    cssout: '../eagle-store/css/',
+    cssout: 'build/css/',
     cssreplaceout: 'css/style.min.css',
     cssreplaceoutview: '../css/style.min.css',
 
@@ -35,12 +35,12 @@ var diretorios = {
     scssout: 'src/css/',
 
     imgin: 'src/img/**/*.{jpg,jpeg,png,gif}',
-    imgout: '../eagle-store/img/',
+    imgout: 'build/img/',
     imgoutsrc: 'src/img/',
 
 
     jsin: 'src/js/**/*.js',
-    jsout: '../eagle-store/js/',
+    jsout: 'build/js/',
     jsoutsrc: 'src/js/',
     jsoutname: 'script.min.js',
     jsreplaceout: 'js/script.min.js',
@@ -72,7 +72,9 @@ function css() {
 };
 
 function js() {
-    return src(['node_modules/jquery/dist/jquery.min.js', diretorios.jsin])
+    return src(['node_modules/jquery/dist/jquery.min.js', 
+                'node_modules/jquery-ui/ui/jquery-1-7.js',
+                diretorios.jsin])
         .pipe(uglify())
         .pipe(concat(diretorios.jsoutname))
         .pipe(dest(diretorios.jsoutsrc))
@@ -130,7 +132,7 @@ function servidor() {
 
 };
 
-exports.build = series(limparForcado, js, css, html);
+exports.build = series(js, css, html);
 exports.limparSrc = limparSrc;
 exports.servidor = servidor;
 exports.recarregar = recarregarNavegador;
