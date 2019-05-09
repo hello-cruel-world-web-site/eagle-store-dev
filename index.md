@@ -1,37 +1,34 @@
-## Welcome to GitHub Pages
+# Eagle Store
 
-You can use the [editor on GitHub](https://github.com/GustavoLeao2018/eagle-store-dev/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+## Nomes dos participantes
+Os participantes e criadores do projeto são:
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Gustavo Leão Nogueira de Oliveira
 
-### Markdown
+- [Facebook](https://www.facebook.com/gustavo.leao.716)
+- [Email](mailto:gustavo.leao.nogueira.2017@gmail.com)
+- [Whatsapp](https://wa.me/55051985309446)
+- [Linkedin](https://www.linkedin.com/in/gustavo-le%C3%A3o-nogueira-de-oliveira-576199b5/)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Nicolas Machados Flores
 
-```markdown
-Syntax highlighted code block
+- [Facebook](https://www.facebook.com/nicolas.flores.75)
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
+## Qual o tipo de site?
+Este será uma loja virtual de aplicativos  para linux.
 
-1. Numbered
-2. List
+## Qual o tema do projeto?
+Temos como tema desenvolver uma loja de aplicativos, que possamos pelas categorias escolher e baixar os  aplicativos e/ou copiar os comandos para instalar na distribuição em que estamos.
 
-**Bold** and _Italic_ and `Code` text
+## Descreva sua ideia de projeto:
+Baseado nas lojas virtuais de aplicativos como a [Snapcraft](https://snapcraft.io/store) e no [Flathub](https://flathub.org/apps) e demais lojas desktop do linux, queremos fazer uma loja que possamos ter os aplicativos por categorias, e que possamos seja o comando para rodar na distro, seja o arquivo para baixar.
 
-[Link](url) and ![Image](src)
-```
+Esta, vai ter páginas para cada aplicativo com a descrição do que cada um é, com fotos e/ou vídeos/gif's , um botão para baixar ou copiar o comando e uma área para escolhar a forma que será baixada/instalada o aplicativo.
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Também, teremos uma página para os usuários se inscreverem e receberem novidades da loja; Uma outra opção para esta página será para uma o pagamento de uma doação para o projeto. A mesma será avaliada qual a opção é melhor (ou se melhor uma outra página).
 
-### Jekyll Themes
+Também o código será colocada em dois repositórios do github:
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/GustavoLeao2018/eagle-store-dev/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+1. [Repositório](https://github.com/hello-cruel-world-web-site/eagle-store-dev) com código base da loja.
+2. [Reposiório](https://github.com/hello-cruel-world-web-site/eagle-linux) com código final da loja.
