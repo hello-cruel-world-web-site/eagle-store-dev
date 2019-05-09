@@ -1,0 +1,30 @@
+{
+  "name": "eagle-store-dev",
+  "version": "0.0.1",
+  "description": "Este será uma loja virtual de aplicativos  para linux.",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GustavoLeao2018/eagle-store-dev.git"
+  },
+  "keywords": [
+    "gulp",
+    "eagle",
+    "store",
+    "store",
+    "linux",
+    "eagle",
+    "html",
+    "css",
+    "sass"
+  ],
+  "author": "GustavoLeao2018",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GustavoLeao2018/eagle-store-dev/issues"
+  },
+  "homepage": "https://github.com/GustavoLeao2018/eagle-store-dev#readme"
+}
