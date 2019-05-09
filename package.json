@@ -26,5 +26,24 @@
   "bugs": {
     "url": "https://github.com/GustavoLeao2018/eagle-store-dev/issues"
   },
-  "homepage": "https://github.com/GustavoLeao2018/eagle-store-dev#readme"
+  "homepage": "https://github.com/GustavoLeao2018/eagle-store-dev#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.5",
+    "del": "^4.1.1",
+    "event-stream": "^4.0.1",
+    "force-del": "^2.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-changed": "^3.2.0",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-html-replace": "^1.6.2",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
+    "jquery": "^3.4.1",
+    "run-sequence": "^2.2.1"
+  }
 }
