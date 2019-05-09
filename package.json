@@ -44,6 +44,7 @@
     "gulp-sourcemaps": "^2.6.5",
     "gulp-uglify": "^3.0.2",
     "jquery": "^3.4.1",
+    "jquery-ui": "^1.12.1",
     "run-sequence": "^2.2.1"
   }
 }
