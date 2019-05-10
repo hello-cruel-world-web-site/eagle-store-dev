@@ -132,7 +132,7 @@ function servidor() {
 
 };
 
-exports.build = series(js, css, html);
+exports.build = series(compilarSass,css,js,html);
 exports.limparSrc = limparSrc;
 exports.servidor = servidor;
 exports.recarregar = recarregarNavegador;
