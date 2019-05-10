@@ -30,5 +30,5 @@ Também, teremos uma página para os usuários se inscreverem e receberem novida
 
 Também o código será colocada em dois repositórios do github:
 
-1. [Repositório](https://github.com/hello-cruel-world-web-site/eagle-store-dev) com código base da loja.
-2. [Reposiório](https://github.com/hello-cruel-world-web-site/eagle-linux) com código final da loja.
+1. [Repositório](https://github.com/GustavoLeao2018/eagle-store-dev) com código base da loja.
+2. [Reposiório](https://github.com/hello-cruel-world-web-site/eagle-store) com código final da loja.
