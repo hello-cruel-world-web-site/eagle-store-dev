@@ -2,9 +2,10 @@
  *    Eagle Script
  */
 $("document").ready(function() {
-    $("#sticky").on("click", function() {
-        $("nav").toggleClass("nav-sticky");
-        console.error("Alterado");
+    $.getJSON('snap.json', (result)=>{
+        $.each(result, (i, field) => {
+            
+        });
     });
 });
 
