@@ -29,6 +29,7 @@
   "homepage": "https://github.com/GustavoLeao2018/eagle-store-dev#readme",
   "devDependencies": {
     "browser-sync": "^2.26.5",
+    "cheerio": "^1.0.0-rc.3",
     "del": "^4.1.1",
     "event-stream": "^4.0.1",
     "force-del": "^2.0.0",
@@ -45,6 +46,10 @@
     "gulp-uglify": "^3.0.2",
     "jquery": "^3.4.1",
     "jquery-ui": "^1.12.1",
-    "run-sequence": "^2.2.1"
+    "request": "^2.88.0",
+    "run-sequence": "^2.2.1",
+    "angular": "^1.7.8",
+    "angular-resource": "^1.7.8",
+    "highlightjs": "^9.12.0"
   }
 }
