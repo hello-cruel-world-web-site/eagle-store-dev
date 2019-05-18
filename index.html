@@ -54,6 +54,7 @@
     <article  id="tab-galeria">
         <div class="linha">
             <div class="coluna" ng-repeat="pacote in pacotes_snaps" >
+                <a href="#teste_link">
                     <div ng-if="verificaCategoria(pacote.categoria_principal)">   
                         <div class="titulo">
                             <h3 ng-bind="pacote.nome"></h3>
@@ -66,6 +67,7 @@
                             <p >Tag: <span  class="tag" ng-bind="pacote.categoria"></span></p>
                         </div>
                     </div>
+                    </a>
             </div>
         </div>
     </article>
