@@ -7,7 +7,7 @@ angular.module("eagleStore").controller("eagleStoreCtrl", ($scope, $http) => {
         $scope.subtitulo = subtitulo;
     };
 
-    $http.get('js/snap.json').then(function(data) {
+    $http.get('js/banco.json').then(function(data) {
         $scope.snap_json = data;
         let cont = 0;
         $scope.pacotes_snaps = [];
@@ -29,10 +29,16 @@ angular.module("eagleStore").controller("eagleStoreCtrl", ($scope, $http) => {
         if(chave == "nome"){return true;}
         else{ return false;}
     };
+
     $scope.verificaCategoria = function(chave)  {
-        if(chave == "categoria"){return true;}
-        else{ return false;}
+        if(chave == true){
+            return true; 
+        }
+        else{ 
+            return false; 
+        }
     };
+
 
     $scope.verificaComando = function(chave)  {
         if(chave == "comando"){return true;}
@@ -59,4 +65,5 @@ angular.module("eagleStore").controller("eagleStoreCtrl", ($scope, $http) => {
         if(chave == "descricao"){return true;}
         else{ return false;}
     };
+
 });

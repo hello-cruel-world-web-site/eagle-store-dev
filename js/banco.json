@@ -8,7 +8,8 @@
         "comando": "sudo snap install pycharm-community", 
         "icon": "https://dashboard.snapcraft.io/site_media/appmedia/2017/11/PyCharmCore256.png",
         "descricao": "Python IDE para desenvolvedor profissional.",
-        "categoria": "desenvolvimento"
+        "categoria": "desenvolvimento",
+        "categoria_principal": true 
     },
 
     {
@@ -20,7 +21,8 @@
         "comando": "sudo snap install atom",
         "icon": "https://dashboard.snapcraft.io/site_media/appmedia/2017/04/atom-256px.png",
         "descricao": "Um editor de texto haqueavel para o século XXI.",
-        "categoria": "desenvolvimento"
+        "categoria": "desenvolvimento",
+        "categoria_principal": true
     },
 
     {
@@ -32,7 +34,8 @@
         "comando": "sudo snap install notepad-plus-plus",
         "icon": "https://dashboard.snapcraft.io/site_media/appmedia/2018/02/notepad-plus-plus.png",
         "descricao": "O Notepad ++ é um editor de código fonte gratuito.",
-        "categoria": "desenvolvimento"
+        "categoria": "desenvolvimento",
+        "categoria_principal": true
     },
 
     {
@@ -44,7 +47,8 @@
         "comando": "sudo snap install android-studio",
         "icon": "https://dashboard.snapcraft.io/site_media/appmedia/2018/03/rsz_android_studio_icon.png",
         "descricao": "A IDE para android.",
-        "categoria": "desenvolvimento"
+        "categoria": "desenvolvimento",
+        "categoria_principal": true
     },
 
     {
@@ -92,7 +96,8 @@
         "comando": "sudo snap install intellij-idea-community",
         "icon": "https://dashboard.snapcraft.io/site_media/appmedia/2017/10/logo_zjwX5FR.png",
         "descricao": "IDE de Java capacitado e ergonômico.",
-        "categoria": "desenvolvimento"
+        "categoria": "desenvolvimento",
+        "categoria_principal": true
     },
 
     {
@@ -116,7 +121,8 @@
         "comando": "sudo snap install brackets",
         "icon": "https://dashboard.snapcraft.io/site_media/appmedia/2017/07/brackets_256.png",
         "descricao": "Brackets é um moderno editor de código para HTML, CSS e ...",
-        "categoria": "desenvolvimento"
+        "categoria": "desenvolvimento",
+        "categoria_principal": true
     },
 
     {
@@ -141,5 +147,17 @@
         "icon": "https://dashboard.snapcraft.io/site_media/appmedia/2017/11/WebStorm_1282x.png",
         "descricao": "IDE poderoso para desenvolvimento moderno de JavaScript.",
         "categoria": "desenvolvimento"
+    },
+    {
+        "nome": "Instagraph",
+        "canal_stable":true,
+        "canal_candidate":true,
+        "canal_beta":true,
+        "canal_edge":true,
+        "comando":"sudo snap install instagraph",
+        "icon":"https://dashboard.snapcraft.io/site_media/appmedia/2016/11/Instagraph.png",
+        "descricao":"Cliente Instagram não oficial.",
+        "categoria":"social",
+        "categoria_principal": true
     }
 ]

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="eagleStore" ng-controller="eagleStoreCtrl">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="description" content="Eagle Store é uma loja de aplicativos para linux, leve, rapida e funcional."/>
+        <meta name="keyword" content="eagle store, loja de aplicativo, snap, flatpak, linux"/>
+        <meta name="viewport" content="iser-scalable=no, width=devide-width, inicial-scale=1.0"/>
+        <meta name="apple-mobile-web-app-capable" content="yes"/>
+        <meta name="apple-mobile-web-app-status-bar-style" content="blue"/>
+
+        <title>Eagle Store</title>
+
+
+       
+        <link rel="stylesheet" href="css/jquery-ui.css"/>
+        <link rel="stylesheet" href="css/estilo.css"/>
+
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+        <script src="js/angular.min.js"></script>
+        <script src="js/escript.js"></script>
+        
+    </head>
+    <body>
+            <script>
+                    $(document).ready(() =>{
+                        $("#tabs").tabs();
+                    });
+                </script>
+<header>
+    <hgroup>
+        <img src="img/eagle.png" class="logo">
+        <h1 ng-bind="titulo"></h1>
+        <h2 ng-bind="subtitulo"></h2>
+    </hgroup>
+</header>
+<section id="tabs">
+    <ul>
+        <li><a href="#tab-bemvindo" ng-click="trocarSubtitulo('Seja bem-vindo!')">Bem-vindo!</a></li>
+        <li><a href="#tab-galeria"ng-click="trocarSubtitulo('Destaques')" >Destaques </a></li>
+        <li><a href="#tab-loja" ng-click="trocarSubtitulo('Loja')">Loja </a></li>
+        <li><a href="#tab-atualizacao" ng-click="trocarSubtitulo('Cadastro')">Cadastro</a></li>
+        <li><a href="#tab-sobre" ng-click="trocarSubtitulo('Sobre')"> Sobre</a></li>
+    </ul>
+   <article id="tab-bemvindo">  
+        <h3>Seja bem-vindo!</h3>
+        <p>Olá,essa é a Eagle Store.</p>
+        <p>Aqui você poderá baixar seus aplicativos para Linux de uma maneira fácil e pratica. </p>
+        <p>Navegue pelas abas e descubra seus aplicativos favoritos.</p>        
+
+   </article>
+   
+    <article  id="tab-galeria">
+        <div class="linha">
+            <div class="coluna" ng-repeat="pacote in pacotes_snaps" >
+                    <div ng-if="verificaCategoria(pacote.categoria_principal)">   
+                        <div class="titulo">
+                            <h3 ng-bind="pacote.nome"></h3>
+                        </div>   
+                        <div class="imagem"> 
+                            <img  src="{{pacote.icon}}" alt="aguia "/>
+                        </div>
+                        <div class="descricao" >
+                            <p ng-bind="pacote.descricao"></p>
+                            <p >Tag: <span  class="tag" ng-bind="pacote.categoria"></span></p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </article>
+
+    <article id="tab-loja">
+        <input type="search" name="procura" id="procura">
+       <div ng-repeat="pacote in pacotes_snaps" >
+                
+                <h3>
+                    <img  src="{{pacote.icon}}" alt="aguia " class="icon"/>
+                    <span ng-bind="pacote.nome"></span>
+                </h3>
+
+                
+
+                <p ng-bind="pacote.descricao"></p>
+                <p >Tag: <span  class="tag" ng-bind="pacote.categoria"></span></p>
+        </div>
+    </article>
+    <article id="tab-atualizacao">
+        <h3>Faça seu cadastro!!!</h3>
+        <p>Caso deseje receber atualizações de aplicativos novos, preencha o formulario abaixo:</p>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" placeholder="Digite seu nome."/>
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite seu sobrenome."/>
+            <label for="telefone">Telefone</label>
+            <input type="tel" name="telefone" id="telefone" placeholder="Digite seu numero"/>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Digite seu email"/>
+
+            <label for="desenvolvedor">
+                <input type="radio" name="desenvolvedor" id="desenvolvedor" value="false" checked/> 
+                Não desenvolvedor
+            </label>
+
+            <label for="desenvolvedor">
+                    <input type="radio" name="desenvolvedor" id="desenvolvedor" value="true"/> 
+                        Desenvolvedor
+                </label>
+
+                <input type="submit" name="cadastro" id="cadastro" value="Cadastrar">
+    
+        </form>
+
+    </article>
+    <article id="tab-sobre">
+        <h3>Sobre</h3>
+        <p>Este site foi criado por:</p>
+        <ul>
+            <li>
+                Gustavo Leão Nogueira de Oliveira
+                <ul>
+                    <li><a href="https://www.facebook.com/gustavo.leao.716">Facebook</a></li>
+                    <li><a href="https://www.linkedin.com/in/gustavo-le%C3%A3o-nogueira-de-oliveira-576199b5/">Linkedin</a></li>
+                    <li><a href="mailto:gustavo.leao.nogueira.2017@gmail.com">Email</a></li>
+                    <li><a href="https://wa.me/55051985309446">WhatsApp</a></li>
+                    <li><a href="https://github.com/GustavoLeao2018">GitHub</a></li>
+                </ul>
+            </li>
+            <li>
+                Nícolas Machado Flôres
+                <ul>
+                    <li><a href="https://www.facebook.com/nicolas.flores.75">Facebook</a></li>
+                </ul> 
+            </li>
+
+        </ul>
+        <p>As ferramentas utilizadas na criação deste site foram: </p>
+        <ul>
+            <li><a href="https://angularjs.org/">Angular.js</a></li>
+            <li><a href="https://nodejs.org/en/">Node.js</a></li>
+            <li><a href="https://gulpjs.com/">Gulp.js</a></li>
+            <li><a href="https://jquery.com/">Jquery</a></li>
+            <li><a href="https://www.w3schools.com/css/">CSS3</a></li>
+            <li><a href="https://www.w3schools.com/html/default.asp">HTML5</a></li>
+            <li><a href="https://www.w3schools.com/js/default.asp">JavaScript</a></li>
+            <li><a href="https://www.json.org/">JSON</a></li>
+            <li><a href="https://sass-lang.com/">Sass</a></li>
+            <li><a href="https://www.shellscript.sh/"> Shell Script</a></li>
+        </ul>
+    </article>
+</section>   
+<footer>
+    <p>Copyright &copy; Criado por Gustavo e Nicolas </p>
+</footer>
+
+    </body>
+</html>

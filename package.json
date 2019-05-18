@@ -1,55 +1,24 @@
 {
   "name": "eagle-store-dev",
   "version": "0.0.1",
-  "description": "Este será uma loja virtual de aplicativos  para linux.",
+  "description": "Esta é a store para linux.",
   "main": "index.js",
   "scripts": {
-    "test": "gulp"
+    "test": ""
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GustavoLeao2018/eagle-store-dev.git"
+    "url": "git+https://github.com/GustavoLeao2018/teste-store.git"
   },
-  "keywords": [
-    "gulp",
-    "eagle",
-    "store",
-    "store",
-    "linux",
-    "eagle",
-    "html",
-    "css",
-    "sass"
-  ],
-  "author": "GustavoLeao2018",
+  "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/GustavoLeao2018/eagle-store-dev/issues"
+    "url": "https://github.com/GustavoLeao2018/teste-store/issues"
   },
-  "homepage": "https://github.com/GustavoLeao2018/eagle-store-dev#readme",
-  "devDependencies": {
-    "browser-sync": "^2.26.5",
-    "cheerio": "^1.0.0-rc.3",
-    "del": "^4.1.1",
-    "event-stream": "^4.0.1",
-    "force-del": "^2.0.0",
-    "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^6.1.0",
-    "gulp-changed": "^3.2.0",
-    "gulp-clean-css": "^4.2.0",
-    "gulp-concat": "^2.6.1",
-    "gulp-html-replace": "^1.6.2",
-    "gulp-htmlmin": "^5.0.1",
-    "gulp-imagemin": "^5.0.3",
-    "gulp-sass": "^4.0.2",
-    "gulp-sourcemaps": "^2.6.5",
-    "gulp-uglify": "^3.0.2",
-    "jquery": "^3.4.1",
-    "jquery-ui": "^1.12.1",
-    "request": "^2.88.0",
-    "run-sequence": "^2.2.1",
+  "homepage": "https://github.com/GustavoLeao2018/teste-store#readme",
+  "dependencies": {
     "angular": "^1.7.8",
-    "angular-resource": "^1.7.8",
-    "highlightjs": "^9.12.0"
+    "jquery": "^3.4.1",
+    "jquery-ui": "^1.12.1"
   }
 }

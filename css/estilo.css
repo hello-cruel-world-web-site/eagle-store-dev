@@ -1,0 +1,177 @@
+body{
+    padding: 0;
+    margin: 0;
+
+}
+
+.linha{
+
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-around;
+}
+
+
+
+@media only screen and (max-width: 1100px) {
+    .linha{
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .linha{
+        grid-template-columns: auto auto;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .linha{
+        grid-template-columns: auto;
+    }
+}
+
+.coluna h3{
+    text-align: center;
+
+}
+
+.coluna{
+    
+    margin:10px;
+    padding: 10px;
+
+}
+
+.coluna p {
+    text-align: justify;
+}
+.tag{
+    border: 1px solid #990899;
+    border-radius: 10px;
+    padding: 5px;
+    background-color:#990899;
+    
+}
+header{
+    text-align: center;
+    background-color:darkred ;
+    padding: 50px;
+    margin: 10px;
+    color:black;   
+     
+
+}
+
+.descricao{
+    background-color: #A31F08;
+    padding: 10px;
+    color: whitesmoke;
+}
+.descricao p{
+    text-indent: 20px;
+    
+}
+
+.titulo{
+    background-color: #A31F08;
+    color:whitesmoke;
+    padding: 10px
+
+}
+
+footer{
+    background-color: darkred ;
+    padding: 10px;
+    border-radius: 0;
+    color:whitesmoke;
+}
+
+.imagem{
+    width: 100%;
+    text-align: center;
+
+}
+
+
+
+#tab-sobre a{
+    color:darkred;
+    text-decoration: none
+
+}
+
+#tab-sobre a:hover{
+    text-decoration: underline;
+    
+}
+
+
+.icon {
+    width: 80px;
+    height: 80px;
+}
+
+form{
+    padding:10px;
+
+}
+
+input[type=text],input[type=tel],input[type=email]{
+    display: block;
+    width: 100%;
+    padding-top: 14px;  
+    padding-bottom: 14px;
+    padding-right: 5px;
+    padding-left: 5px;s
+    border:none;
+    border-bottom: 1px solid rgba(255, 0, 0, 0.4);
+    transition: 0.4s ease;
+    opacity: 0.5;
+    
+
+}
+
+input[type=text]:focus,input[type=tel]:focus,input[type=email]:focus{
+    border-bottom: 1px solid rgba(255, 0, 0, 1);
+   background-color: rgb(230, 225, 225);
+    opacity: 1;
+}
+
+input[type=submit]{
+    width: 100%;
+    font-size: 20px;
+    background-color: darkred;
+    color: whitesmoke;
+    padding: 10px;
+    border: 1px solid darkred;
+    border-radius: 10px;
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+
+
+}
+
+input[type=submit]:hover{
+   
+    opacity: 0.75;
+
+
+}
+
+input[type=radio]{
+    margin: 15px;
+
+}
+
+label{
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+
+.logo{
+    mix-blend-mode: color-burn;
+    height: 200px;
+
+}
